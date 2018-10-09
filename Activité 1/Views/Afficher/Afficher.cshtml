@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+@{
+    Layout = null;
+    ViewBag.Title = "Afficher";
+}
+<body>
+    <div>
+        <ul>
+            @foreach (Activité_1.Models.Livre livre in ViewBag.livres)
+            {
+            <li>Titre : <a href="~/Afficher/Livre/@livre.Id"><q>@livre.Titre</q></a> Auteur: <a href="~/Afficher/Auteur/@livre.Auteur.Id">@livre.Auteur.Nom</a></li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

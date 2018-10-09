@@ -16,6 +16,7 @@ namespace Activité_1
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //Activité_1.Models.ListeCollection.Init();
         }
     }
 }

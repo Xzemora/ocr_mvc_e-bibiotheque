@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+@{
+    Layout = null;
+    ViewBag.Title = "Auteur";
+}
+<body>
+    <div>
+
+        <ul>
+            @{
+               <h4>@ViewBag.auteur a publié : </h4>
+                foreach (Activité_1.Models.Livre livre in ViewBag.livrePublie)
+                {
+                        <li>@livre.Titre</li>
+                }
+        }
+                
+        </ul>
+    </div>
+</body>
+</html>

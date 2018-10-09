@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+@{
+    Layout = null;
+    ViewBag.Title = "Auteurs";
+}
+<body>
+    <div>
+        
+        <ul>
+           
+        @{ foreach (Activité_1.Models.Auteur auteur in ViewBag.auteurs)
+                        {
+            <li>@auteur.Nom</li>
+                    }
+        }
+             
+        </ul>
+    </div>
+</body>
+</html>

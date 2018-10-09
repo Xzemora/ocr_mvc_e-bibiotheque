@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+@{
+    Layout = null;
+    ViewBag.Title = "Livre";
+}
+<body>
+    <p>Titre : @ViewBag.livre.Titre</p>
+    <p>Date de parution : @ViewBag.date</p>
+    <p>Disponibilité : @{if (ViewBag.livre.Disponible)
+        {
+            <span>Disponible</span>
+        }
+        else
+        {
+            <span>Emprunté par @ViewBag.client.Email</span>
+        }
+    }</p>
+</body>
+</html>
