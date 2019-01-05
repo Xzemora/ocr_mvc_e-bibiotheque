@@ -152,7 +152,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ClassCollection.cs" />
+    <Compile Include="Models\Auteur.cs" />
+    <Compile Include="Models\MethodeCollection.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\ListeCollection.cs" />
+    <Compile Include="Models\Livre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
